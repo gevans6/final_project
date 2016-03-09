@@ -1,0 +1,52 @@
+---
+title: "index.Rmd"
+output: html_document
+---
+
+All Races:
+Outliers:
+Trends:
+
+Asian: 
+Outliers:
+Trends:
+
+Black:
+Outliers:
+Trends:
+
+Black or Combination:
+Outliers:
+Trends:
+
+Children of Foreign Born:
+Outliers:
+Trends:
+
+Foriegn Born:
+Outliers:
+Trends:
+
+Hispanic: 
+Outliers:
+  - ~3% of 7-17 year olds are not enrolled in Elementary School
+  - ~2% of 14-17 year olds not enrolled in HS
+Trends:
+  - 19% of people over 20 are not HS grads
+
+White:
+Outliers:
+Trends:
+
+White Non Hispanic:
+Outliers:
+Trends:
+
+White or Combination:
+Outliers:
+Trends:
+
+White or Combination Non Hispanic:
+Outliers:
+Trends:
+
