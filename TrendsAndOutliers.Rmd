@@ -2,51 +2,54 @@
 title: "index.Rmd"
 output: html_document
 ---
+## For Internal Use - to write summaries of data sets
 
 All Races:  
-Outliers:  
-Trends:  
+  - ~11% of people over 21 are not HS grads
+  - 55% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 Asian:  
-Outliers:  
-Trends:  
+  - 9% of people over 21 are not HS grads
+  - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+
+Asian or Combination:  
+  - 9% of people over 21 are not HS grads
+  - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 Black:  
-Outliers:  
-Trends:  
+  - 13% of people over 21 are not HS grads
+  - 58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 Black or Combination:  
-Outliers:  
-Trends:  
+  - 13% of people over 21 are not HS grads
+  - 57% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 Children of Foreign Born:  
-Outliers:  
-Trends:  
+  - 20% of people over 21 are not HS grads
+  - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 Foriegn Born:  
-Outliers:  
-Trends:  
+  - 26% of people over 21 are not HS grads
+  - 51% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
-Hispanic:   
-Outliers:  
-  - ~3% of 7-17 year olds are not enrolled in Elementary School
-  - ~2% of 14-17 year olds not enrolled in HS  
-Trends:  
-  - 19% of people over 20 are not HS grads
+Hispanic:    
+  - 30% of people over 20 are not HS grads
+  - 45% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
 
 White:  
-Outliers:  
-Trends:  
-
+  - ~11% of people over 20 are not HS grads
+  - ~54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
+ 
 White Non Hispanic:  
-Outliers:  
-Trends:  
+  - ~7% of people over 20 are not HS grads
+  - ~58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
 
 White or Combination:  
-Outliers:  
-Trends:  
+  - ~11% of people over 20 are not HS grads
+  - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
 
 White or Combination Non Hispanic:  
-Outliers:  
-Trends:  
+  - ~7% of people over 20 are not HS grads
+  - ~58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
+
 
