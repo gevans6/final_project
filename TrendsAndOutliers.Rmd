@@ -7,49 +7,60 @@ output: html_document
 All Races:  
   - ~11% of people over 21 are not HS grads
   - 55% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 668 people above 21 in ES
 
 Asian:  
   - 9% of people over 21 are not HS grads
   - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 107 people above 21 in ES
 
 Asian or Combination:  
   - 9% of people over 21 are not HS grads
   - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 119 people above 21 in ES
 
 Black:  
   - 13% of people over 21 are not HS grads
   - 58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 118 people above 21 in ES
 
 Black or Combination:  
   - 13% of people over 21 are not HS grads
   - 57% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 123 people above 21 in ES
 
 Children of Foreign Born:  
   - 20% of people over 21 are not HS grads
   - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 395 people above 21 in ES
 
 Foriegn Born:  
   - 26% of people over 21 are not HS grads
   - 51% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 204 people above 21 in ES
 
 Hispanic:    
   - 30% of people over 20 are not HS grads
   - 45% of 3 and 4 year olds are enrolled in Nursery/Kindergarden  
+  - 215 people above 21 in ES
 
 White:  
   - ~11% of people over 20 are not HS grads
   - ~54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
+  - 473 people above 21 in ES
  
 White Non Hispanic:  
   - ~7% of people over 20 are not HS grads
   - ~58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
+  - 76 people above 21 in ES  
 
 White or Combination:  
   - ~11% of people over 20 are not HS grads
   - 54% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
+  - 489 people above 21 in ES
 
 White or Combination Non Hispanic:  
   - ~7% of people over 20 are not HS grads
   - ~58% of 3 and 4 year olds are enrolled in Nursery/Kindergarden
-
+  - 78 people above 21 in ES
 
