@@ -22,42 +22,45 @@ shinyServer(function(input, output) {
   output$scatter <- renderPlotly({ 
         customDF <- data.frame(Ages=character())
         yaxis <- 1
-        if(input$dfSelection == 1) {
+        for(i in 1:length(input$dfSelection)){
+          if(input$dfSelection[i] == 1) {
           customDF <- combine_sets(customDF, allRaces)
         }
-        if(input$dfSelection == 2) {
+        if(input$dfSelection[i] == 2) {
           customDF <- combine_sets(customDF, asian)
         }
-        if(input$dfSelection == 3) {
+        if(input$dfSelection[i] == 3) {
           customDF <- combine_sets(customDF, asianCombo)
         }
-        if(input$dfSelection == 4) {
+        if(input$dfSelection[i] == 4) {
           customDF <- combine_sets(customDF, black)
         }
-        if(input$dfSelection == 5) {
+        if(input$dfSelection[i] == 5) {
           customDF <- combine_sets(customDF, blackCombo)
         }
-        if(input$dfSelection == 6) {
+        if(input$dfSelection[i] == 6) {
           customDF <- combine_sets(customDF, cFB)
         }
-        if(input$dfSelection == 7) {
+        if(input$dfSelection[i] == 7) {
           customDF <- combine_sets(customDF, foreign)
         }
-        if(input$dfSelection == 8) {
+        if(input$dfSelection[i] == 8) {
           customDF <- combine_sets(customDF, hispanic)
         }
-        if(input$dfSelection == 9) {
+        if(input$dfSelection[i] == 9) {
           customDF <- combine_sets(customDF, white)
         }
-        if(input$dfSelection == 10) {
+        if(input$dfSelection[i] == 10) {
           customDF <- combine_sets(customDF, whiteNonH)
         }
-        if(input$dfSelection == 11) {
+        if(input$dfSelection[i] == 11) {
           customDF <- combine_sets(customDF, whiteCombo)
         }
-        if(input$dfSelection == 12) {
+        if(input$dfSelection[i] == 12) {
           customDF <- combine_sets(customDF, whiteComboNonH)
         }
+        }
+        
   
         if(input$ySelection == 1) {
           yaxis <- "PercentTotalEnrolled"
