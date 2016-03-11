@@ -7,7 +7,8 @@ View(WhiteAlone)
 BlackAlone <- read.csv("data/Tab01-BlackAlone.csv")
 View(BlackAlone)
 AsianAlone <- read.csv("data/Tab01-AsianAlone.csv")
-
+View(AsianAlone)
+AllRaces <- read.csv("data/Tab01-AllRaces.csv")
 PTEset <- BlackAlone %>% group_by(Gender) %>% select(Ages, PercentTotalEnrolled) 
 plot_ly(PTEset, x = Ages, y = PercentTotalEnrolled, mode = 'markers', color = Gender)
 

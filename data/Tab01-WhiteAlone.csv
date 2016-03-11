@@ -1,3 +1,4 @@
+<<<<<<< 9a1930ccda09eaeacbf03736afd455084bebab35
 Ages,Population,PercentTotalEnrolled,PercentNurseKinder,PercentElementary,PercentHS,PercentCollege,PercentTotalNotEnrolled,PercentHSGrad,PercentNotHSGrad,Gender,,,
 Total,"234,803",24,2.6,10.2,5.2,5.9,76,65.9,10.1,Both Sexes (White Alone),,,
 3 and 4 years old,"5,761",53.6,53.6,-,-,-,46.4,-,46.4,Both Sexes (White Alone),,,
@@ -44,3 +45,51 @@ Total,"119,152",23.8,2.5,9.8,5.1,6.3,76.2,66.6,9.6,Female (White Alone),,,
 35 to 44 years old,"15,124",4.6,-,-,0.2,4.4,95.4,85.5,9.9,Female (White Alone),,,
 45 to 54 years old,"17,060",2.4,-,-,0.2,2.1,97.6,88.3,9.3,Female (White Alone),,,
 55 years old and over,"38,055",0.4,-,-,-,0.4,99.6,87.8,11.8,Female (White Alone),,,
+=======
+Ages,Population,NumberTotalEnrolled,PercentTotalEnrolled,NumberNurseKinder,PercentNurseKinder,NumberElementary,PercentElementary,NumberHS,PercentHS,NumberCollege,PercentCollege,NumberTotalNotEnrolled,PercentTotalNotEnrolled,NumberHSGrad,PercentHSGrad,NumberNotHSGrad,PercentNotHSGrad,Gender
+Total,234803,56343,24,6220,2.6,23886,10.2,12283,5.2,13953,5.9,178461,76,154658,65.9,23803,10.1,Both Sexes (White Alone)
+3 and 4 years old,5761,3090,53.6,3090,53.6,0,0,0,0,0,0,2671,46.4,0,0,2671,46.4,Both Sexes (White Alone)
+5 and 6 years old,5835,5462,93.6,3112,53.3,2351,40.3,0,0,0,0,373,6.4,0,0,373,6.4,Both Sexes (White Alone)
+7 to 9 years old,9024,8803,97.6,18,0.2,8785,97.4,0,0,0,0,221,2.4,0,0,221,2.4,Both Sexes (White Alone)
+10 to 13 years old,12101,11797,97.5,0,0,11660,96.4,137,1.1,0,0,304,2.5,0,0,304,2.5,Both Sexes (White Alone)
+14 and 15 years old,6185,6042,97.7,0,0,956,15.5,5073,82,12,0.2,144,2.3,0,0,144,2.3,Both Sexes (White Alone)
+16 and 17 years old,6143,5742,93.5,0,0,65,1.1,5542,90.2,136,2.2,401,6.5,97,1.6,304,4.9,Both Sexes (White Alone)
+18 and 19 years old,6213,4245,68.3,0,0,19,0.3,1163,18.7,3064,49.3,1968,31.7,1517,24.4,451,7.3,Both Sexes (White Alone)
+20 and 21 years old,6299,3341,53,0,0,0,0,108,1.7,3232,51.3,2959,47,2559,40.6,399,6.3,Both Sexes (White Alone)
+22 to 24 years old,9994,2858,28.6,0,0,5,0.1,72,0.7,2781,27.8,7136,71.4,6388,63.9,748,7.5,Both Sexes (White Alone)
+25 to 29 years old,15984,1980,12.4,0,0,3,0,34,0.2,1942,12.2,14005,87.6,12708,79.5,1297,8.1,Both Sexes (White Alone)
+30 to 34 years old,15869,943,5.9,0,0,28,0.2,27,0.2,888,5.6,14926,94.1,13426,84.6,1500,9.5,Both Sexes (White Alone)
+35 to 44 years old,30220,1166,3.9,0,0,0,0,53,0.2,1113,3.7,29054,96.1,25686,85,3368,11.1,Both Sexes (White Alone)
+45 to 54 years old,33828,629,1.9,0,0,7,0,65,0.2,557,1.6,33199,98.1,29632,87.6,3566,10.5,Both Sexes (White Alone)
+55 years old and over,71345,244,0.3,0,0,6,0,9,0,229,0.3,71101,99.7,62644,87.8,8457,11.9,Both Sexes (White Alone)
+Total,115651,28015,24.2,3186,2.8,12181,10.5,6250,5.4,6398,5.5,87636,75.8,75243,65.1,12393,10.7,Male (White Alone)
+3 and 4 years old,2950,1544,52.3,1544,52.3,0,0,0,0,0,0,1406,47.7,0,0,1406,47.7,Male (White Alone)
+5 and 6 years old,2986,2796,93.7,1635,54.8,1161,38.9,0,0,0,0,190,6.3,0,0,190,6.3,Male (White Alone)
+7 to 9 years old,4623,4494,97.2,7,0.2,4487,97.1,0,0,0,0,129,2.8,0,0,129,2.8,Male (White Alone)
+10 to 13 years old,6196,5995,96.8,0,0,5933,95.7,63,1,0,0,201,3.2,0,0,201,3.2,Male (White Alone)
+14 and 15 years old,3171,3085,97.3,0,0,541,17.1,2541,80.1,4,0.1,85,2.7,0,0,85,2.7,Male (White Alone)
+16 and 17 years old,3143,2909,92.5,0,0,35,1.1,2811,89.4,63,2,235,7.5,56,1.8,179,5.7,Male (White Alone)
+18 and 19 years old,3165,2050,64.8,0,0,3,0.1,649,20.5,1397,44.1,1115,35.2,879,27.8,236,7.5,Male (White Alone)
+20 and 21 years old,3364,1694,50.4,0,0,0,0,73,2.2,1621,48.2,1670,49.6,1424,42.3,246,7.3,Male (White Alone)
+22 to 24 years old,4868,1303,26.8,0,0,0,0,24,0.5,1278,26.3,3565,73.2,3181,65.3,384,7.9,Male (White Alone)
+25 to 29 years old,8060,934,11.6,0,0,0,0,6,0.1,927,11.5,7127,88.4,6400,79.4,726,9,Male (White Alone)
+30 to 34 years old,7971,402,5,0,0,18,0.2,10,0.1,374,4.7,7568,95,6756,84.8,812,10.2,Male (White Alone)
+35 to 44 years old,15096,474,3.1,0,0,0,0,27,0.2,447,3,14622,97,12756,84.5,1866,12.4,Male (White Alone)
+45 to 54 years old,16768,227,1.4,0,0,0,0,36,0.2,191,1.1,16540,98.6,14566,86.9,1974,11.8,Male (White Alone)
+55 years old and over,33290,107,0.3,0,0,3,0,9,0,95,0.3,33183,99.7,29224,87.8,3959,11.9,Male (White Alone)
+Total,119152,28328,23.8,3034,2.5,11705,9.8,6034,5.1,7555,6.3,90824,76.2,79414,66.6,11410,9.6,Female (White Alone)
+3 and 4 years old,2811,1546,55,1546,55,0,0,0,0,0,0,1265,45,0,0,1265,45,Female (White Alone)
+5 and 6 years old,2849,2666,93.6,1476,51.8,1190,41.7,0,0,0,0,183,6.4,0,0,183,6.4,Female (White Alone)
+7 to 9 years old,4401,4309,97.9,11,0.3,4298,97.7,0,0,0,0,92,2.1,0,0,92,2.1,Female (White Alone)
+10 to 13 years old,5905,5802,98.3,0,0,5728,97,74,1.3,0,0,103,1.7,0,0,103,1.7,Female (White Alone)
+14 and 15 years old,3015,2956,98.1,0,0,415,13.8,2532,84,9,0.3,59,1.9,0,0,59,1.9,Female (White Alone)
+16 and 17 years old,2999,2833,94.5,0,0,30,1,2731,91,73,2.4,166,5.5,41,1.4,125,4.2,Female (White Alone)
+18 and 19 years old,3049,2196,72,0,0,16,0.5,513,16.8,1667,54.7,853,28,638,20.9,215,7.1,Female (White Alone)
+20 and 21 years old,2935,1646,56.1,0,0,0,0,35,1.2,1611,54.9,1289,43.9,1135,38.7,154,5.2,Female (White Alone)
+22 to 24 years old,5126,1555,30.3,0,0,5,0.1,48,0.9,1502,29.3,3571,69.7,3206,62.6,364,7.1,Female (White Alone)
+25 to 29 years old,7924,1046,13.2,0,0,3,0,28,0.3,1015,12.8,6878,86.8,6307,79.6,571,7.2,Female (White Alone)
+30 to 34 years old,7899,541,6.9,0,0,11,0.1,17,0.2,514,6.5,7358,93.1,6670,84.4,688,8.7,Female (White Alone)
+35 to 44 years old,15124,692,4.6,0,0,0,0,26,0.2,666,4.4,14432,95.4,12930,85.5,1502,9.9,Female (White Alone)
+45 to 54 years old,17060,402,2.4,0,0,7,0,29,0.2,366,2.1,16658,97.6,15066,88.3,1592,9.3,Female (White Alone)
+55 years old and over,38055,137,0.4,0,0,3,0,0,0,133,0.4,37918,99.6,33421,87.8,4497,11.8,Female (White Alone)
+>>>>>>> Grant fixed the csv files and did work on the visual
