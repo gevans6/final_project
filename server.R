@@ -5,26 +5,17 @@ library(dplyr)
 source('graph_SingleByAge .R')
 source('SummaryFunctions.R')
 
-allRaces <- read.csv("498_data/Tab01-AllRaces.csv")
-asian <- read.csv("498_data/Tab01-AsianAlone.csv")
-asianCombo <- read.csv("498_data/Tab01-AsianAloneOrInCombination.csv")
-black <- read.csv("498_data/Tab01-BlackAlone.csv")
-blackCombo <- read.csv("498_data/Tab01-BlackAloneOrInCombination.csv")
-cFB <- read.csv("498_data/Tab01-ChildrenOfForeignBorn.csv")
-foreign <- read.csv("498_data/Tab01-ForeignBorn.csv")
-hispanic <- read.csv("498_data/Tab01-Hispanic.csv")
-white <- read.csv("498_data/Tab01-WhiteAlone.csv")
-whiteNonH <- read.csv("498_data/Tab01-WhiteAloneNonHispanic.csv")
-whiteCombo <- read.csv("498_data/Tab01-WhiteAloneOrInCombination.csv")
-whiteComboNonH <- read.csv("498_data/Tab01-WhiteAloneOrInCombinationNonHispanic.csv")
-
 shinyServer(function(input, output) {
  
+  # Create scatter plot in main panel
   output$scatter <- renderPlotly({ 
+        # Create an empty dataframe that fills according to which dataframe check boxes are selected by user
         customDF <- data.frame(Ages=character())
+        # Will be the y axis label for the plot
         yaxis <- 1
+        # For each dataframe check box selected by user, the dataframe will be added to the previous custom dataframe
         for(i in 1:length(input$dfSelection)){
-                if(input$dfSelection[i] == 1) {
+              if(input$dfSelection[i] == 1) {
                 customDF <- combine_sets(customDF, allRaces)
               }
               if(input$dfSelection[i] == 2) {
@@ -62,7 +53,7 @@ shinyServer(function(input, output) {
               }
         }
         
-  
+        # Renames the y axis according to the selected comparison radio button
         if(input$ySelection == 1) {
           yaxis <- "PercentTotalEnrolled"
           ylabel <- "Percent Total Enrolled"
@@ -96,11 +87,11 @@ shinyServer(function(input, output) {
           ylabel <- "Percent Not High School Grad"
         }
         
-    
+    # Creates and outputs graph using the custom dataframe and y axis label 
     graph_SingleByAge(customDF, yaxis, ylabel)
+})
 
-  })
-  
+  # Renders summary information for each selected dataframe
   output$text <- renderText({
     data_set <- data.frame(1)
     if(input$dfSelection == 1) {
