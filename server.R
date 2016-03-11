@@ -65,30 +65,44 @@ shinyServer(function(input, output) {
   
         if(input$ySelection == 1) {
           yaxis <- "PercentTotalEnrolled"
+          ylabel <- "Percent Total Enrolled"
         }
         if(input$ySelection == 2) {
           yaxis <- "PercentNurseKinder"
+          ylabel <- "Percent Nursery/Kindergarden"
         }
         if(input$ySelection == 3) {
           yaxis <- "PercentElementary"
+          ylabel <- "Percent Elementary"
         }
         if(input$ySelection == 4) {
           yaxis <- "PercentHS"
+          ylabel <- "Percent High School"
         }
         if(input$ySelection == 5) {
           yaxis <- "PercentCollege"
+          ylabel <- "Percent College"
         }
         if(input$ySelection == 6) {
           yaxis <- "PercentTotalNotEnrolled"
+          ylabel <- "Percent Total Not Enrolled"
         }
         if(input$ySelection == 7) {
           yaxis <- "PercentHSGrad"
+          ylabel <- "Percent High School Grad"
         }
         if(input$ySelection == 8) {
           yaxis <- "PercentNotHSGrad"
+          ylabel <- "Percent Not High School Grad"
         }
         
-    graph_SingleByAge(customDF, yaxis)  
+
+ 
+
+        
+        
+    graph_SingleByAge(customDF, yaxis, ylabel)
+
   })
   
   output$text <- renderText({
