@@ -16,7 +16,7 @@ shinyUI(fluidPage(
                                "White Alone" = 9, "White Alone Non Hispanic" = 10, "White Alone or in 
                                Combination" = 11, "White Alone or in Combination Non Hispanic" = 12), 
                 selected = 1),
-            radioButtons("ySelection", label = h4("Select Comparison"),
+            checkboxGroupInput("ySelection", label = h4("Select Comparison"),
                 choices = list("Percent Total Enrolled" = 1, "Percent Nursery/Kindergarden" = 2, 
                                "Percent Elementary School" = 3, "Percent High School" = 4, "Percent
                                College" = 5, "Percent Not Enrolled" = 6, "Percent High School Grad" = 7,

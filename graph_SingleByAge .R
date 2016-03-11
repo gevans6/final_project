@@ -5,6 +5,6 @@ graph_SingleByAge <- function(dataframe, yaxis) {
   return()
 }
 
-dataframe <- combine_sets(WhiteAlone, AllRaces)
-yaxis <- 'PercentTotalEnrolled'
-graph_SingleByAge(dataframe, yaxis)
+#dataframe <- combine_sets(WhiteAlone, AllRaces)
+#yaxis <- 'PercentTotalEnrolled'
+#graph_SingleByAge(dataframe, yaxis)
