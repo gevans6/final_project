@@ -59,6 +59,6 @@ shinyServer(function(input, output) {
         }
   
   
-    graph_SingleByAge(customDF, input$ySelection)
+    graph_SingleByAge(customDF, input$ySelection)  
   })
 })
