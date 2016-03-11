@@ -131,9 +131,12 @@ shinyServer(function(input, output) {
     if(input$dfSelection == 12) {
       data_set <- SummaryInfo(whiteComboNonH)
     }
-    paste0("The total population size is ", data_set$Population, ". ", data_set$male_percent, "% of males
-    and ", data_set$female_percent, "% of females are enrolled in school. ", data_set$PercentNurseKinder, "%
-    are enrolled as nursury/kindergarden, ", data_set$PercentElementary, "% in Elementary, ",
-    data_set$PercentHS, "% in high school, and ", data_set$PercentCollege, "% in college.")
+    # Only prints the summary of the data frame when only 1 csv is selected 
+    if (length(input$dfSelection) == 1){
+      paste0("The total population size is ", data_set$Population, ". ", data_set$male_percent, "% of males
+      and ", data_set$female_percent, "% of females are enrolled in school. ", data_set$PercentNurseKinder, "%
+      are enrolled as nursury/kindergarden, ", data_set$PercentElementary, "% in Elementary, ",
+      data_set$PercentHS, "% in high school, and ", data_set$PercentCollege, "% in college.")
+    } 
   })
 })
