@@ -6,6 +6,14 @@ graph_SingleByAge <- function(dataframe, yaxis) {
   return() 
 }
 
+
 #dataframe <- combine_sets(WhiteAlone, AllRaces)
 #yaxis <- 'PercentTotalEnrolled'
 #graph_SingleByAge(dataframe, yaxis)
+
+#df3 <- list(WhiteAlone, BlackAlone)
+#dataframe <- combine_sets(WhiteAlone, BlackAlone)
+#View(dataframe)
+#yaxis <- 'PercentTotalEnrolled'
+#graph_SingleByAge(df3, yaxis)
+
