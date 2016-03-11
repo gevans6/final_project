@@ -9,3 +9,4 @@ SummaryInfo <- function(data) {
   summary$female_percent <- df$PercentTotalEnrolled[3]
   return(summary)
 }
+
