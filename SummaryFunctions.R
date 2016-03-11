@@ -1,5 +1,6 @@
 library(dplyr)
 
+# Creates data frame of summary information
 SummaryInfo <- function(data) {
   df <- data %>% filter(Ages == "Total")
   summary <- head(data, n = 1L)

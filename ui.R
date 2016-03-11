@@ -38,14 +38,14 @@ shinyUI(fluidPage(
               "was updated in October 2014 and was accessed though the census.gov website, routed through the United States’ public data 
               domain, data.gov. This data was collected through the United States census."),
             p("You may view our Github repository ", a("here", href = "http://www.census.gov/hhes/school/data/cps/2014/tables.html"), "."),
-             
-            # Outputs the graph
 
-            plotlyOutput("scatter"), 
+            
+            # Output Summary Information
             h3("Summary"),
-            textOutput("text")
-            plotlyOutput("scatter") 
-
+            textOutput("text"),
+            
+            # Outputs the graph
+            plotlyOutput("scatter")
             )
           )
 ))
