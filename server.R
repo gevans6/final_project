@@ -20,7 +20,8 @@ whiteComboNonH <- read.csv("498_data/Tab01-WhiteAloneOrInCombinationNonHispanic.
 shinyServer(function(input, output) {
   
   output$scatter <- renderPlotly({ 
-        customDF<- data.frame(Ages=character())
+        customDF <- data.frame(Ages=character())
+        yaxis <- 1
         if(input$dfSelection == 1) {
           customDF <- combine_sets(customDF, allRaces)
         }
@@ -58,7 +59,33 @@ shinyServer(function(input, output) {
           customDF <- combine_sets(customDF, whiteComboNonH)
         }
   
-  
-    graph_SingleByAge(customDF, input$ySelection)  
+        if(input$ySelection == 1) {
+          yaxis <- "PercentTotalEnrolled"
+        }
+        if(input$ySelection == 2) {
+          yaxis <- "PercentNurseKinder"
+        }
+        if(input$ySelection == 3) {
+          yaxis <- "PercentElementary"
+        }
+        if(input$ySelection == 4) {
+          yaxis <- "PercentHS"
+        }
+        if(input$ySelection == 5) {
+          yaxis <- "PercentCollege"
+        }
+        if(input$ySelection == 6) {
+          yaxis <- "PercentTotalNotEnrolled"
+        }
+        if(input$ySelection == 7) {
+          yaxis <- "PercentHSGrad"
+        }
+        if(input$ySelection == 8) {
+          yaxis <- "PercentNotHSGrad"
+        }
+        
+        
+        
+    graph_SingleByAge(customDF, yaxis)  
   })
 })
