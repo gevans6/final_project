@@ -5,7 +5,7 @@ library(dplyr)
 shinyUI(fluidPage(
   
         # Create title
-        titlePanel('Title'),
+        titlePanel('American School Enrollment'),
         # Create sidebar and sidepanel controls
         sidebarLayout(
           sidebarPanel(

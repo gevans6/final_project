@@ -24,42 +24,42 @@ shinyServer(function(input, output) {
         customDF <- data.frame(Ages=character())
         yaxis <- 1
         for(i in 1:length(input$dfSelection)){
-          if(input$dfSelection[i] == 1) {
-          customDF <- combine_sets(customDF, allRaces)
-        }
-        if(input$dfSelection[i] == 2) {
-          customDF <- combine_sets(customDF, asian)
-        }
-        if(input$dfSelection[i] == 3) {
-          customDF <- combine_sets(customDF, asianCombo)
-        }
-        if(input$dfSelection[i] == 4) {
-          customDF <- combine_sets(customDF, black)
-        }
-        if(input$dfSelection[i] == 5) {
-          customDF <- combine_sets(customDF, blackCombo)
-        }
-        if(input$dfSelection[i] == 6) {
-          customDF <- combine_sets(customDF, cFB)
-        }
-        if(input$dfSelection[i] == 7) {
-          customDF <- combine_sets(customDF, foreign)
-        }
-        if(input$dfSelection[i] == 8) {
-          customDF <- combine_sets(customDF, hispanic)
-        }
-        if(input$dfSelection[i] == 9) {
-          customDF <- combine_sets(customDF, white)
-        }
-        if(input$dfSelection[i] == 10) {
-          customDF <- combine_sets(customDF, whiteNonH)
-        }
-        if(input$dfSelection[i] == 11) {
-          customDF <- combine_sets(customDF, whiteCombo)
-        }
-        if(input$dfSelection[i] == 12) {
-          customDF <- combine_sets(customDF, whiteComboNonH)
-        }
+                if(input$dfSelection[i] == 1) {
+                customDF <- combine_sets(customDF, allRaces)
+              }
+              if(input$dfSelection[i] == 2) {
+                customDF <- combine_sets(customDF, asian)
+              }
+              if(input$dfSelection[i] == 3) {
+                customDF <- combine_sets(customDF, asianCombo)
+              }
+              if(input$dfSelection[i] == 4) {
+                customDF <- combine_sets(customDF, black)
+              }
+              if(input$dfSelection[i] == 5) {
+                customDF <- combine_sets(customDF, blackCombo)
+              }
+              if(input$dfSelection[i] == 6) {
+                customDF <- combine_sets(customDF, cFB)
+              }
+              if(input$dfSelection[i] == 7) {
+                customDF <- combine_sets(customDF, foreign)
+              }
+              if(input$dfSelection[i] == 8) {
+                customDF <- combine_sets(customDF, hispanic)
+              }
+              if(input$dfSelection[i] == 9) {
+                customDF <- combine_sets(customDF, white)
+              }
+              if(input$dfSelection[i] == 10) {
+                customDF <- combine_sets(customDF, whiteNonH)
+              }
+              if(input$dfSelection[i] == 11) {
+                customDF <- combine_sets(customDF, whiteCombo)
+              }
+              if(input$dfSelection[i] == 12) {
+                customDF <- combine_sets(customDF, whiteComboNonH)
+              }
         }
         
   
@@ -88,7 +88,7 @@ shinyServer(function(input, output) {
           yaxis <- "PercentNotHSGrad"
         }
         
-    graph_SingleByAge(customDF, yaxis, input$ySelection)  
+    graph_SingleByAge(customDF, yaxis)  
   })
   
   output$text <- renderText({
