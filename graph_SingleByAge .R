@@ -13,9 +13,6 @@ graph_SingleByAge <- function(dataframe, yaxis, label) {
   layout(title = paste("Age Groups vs", label), yaxis = list(title = label), xaxis = xtext,
          autosize = F, height = 1000, width = 1000, margin = m) %>% 
   return() 
-<<<<<<< 66ccc5dc9115587e27e127ec93d15d913cf650aa
+
 }
 
-=======
-}
->>>>>>> formatted graph

@@ -96,11 +96,7 @@ shinyServer(function(input, output) {
           ylabel <- "Percent Not High School Grad"
         }
         
-
- 
-
-        
-        
+    
     graph_SingleByAge(customDF, yaxis, ylabel)
 
   })
