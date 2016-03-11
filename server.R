@@ -19,7 +19,7 @@ whiteCombo <- read.csv("498_data/Tab01-WhiteAloneOrInCombination.csv")
 whiteComboNonH <- read.csv("498_data/Tab01-WhiteAloneOrInCombinationNonHispanic.csv")
 
 shinyServer(function(input, output) {
-  
+ 
   output$scatter <- renderPlotly({ 
         customDF <- data.frame(Ages=character())
         yaxis <- 1
@@ -88,9 +88,7 @@ shinyServer(function(input, output) {
           yaxis <- "PercentNotHSGrad"
         }
         
-        
-        
-    graph_SingleByAge(customDF, yaxis)  
+    graph_SingleByAge(customDF, yaxis, input$ySelection)  
   })
   
   output$text <- renderText({
@@ -136,5 +134,4 @@ shinyServer(function(input, output) {
     are enrolled as nursury/kindergarden, ", data_set$PercentElementary, "% in Elementary, ",
     data_set$PercentHS, "% in high school, and ", data_set$PercentCollege, "% in college.")
   })
-  
 })
