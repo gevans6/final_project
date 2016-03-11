@@ -40,7 +40,9 @@ shinyUI(fluidPage(
             p("You may view our Github repository ", a("here", href = "http://www.census.gov/hhes/school/data/cps/2014/tables.html"), "."),
              
             # Outputs the graph
-            plotlyOutput("scatter")     
+            plotlyOutput("scatter"), 
+            h3("Summary"),
+            textOutput("text")
             )
           )
 ))
