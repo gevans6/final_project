@@ -27,7 +27,9 @@ shinyUI(fluidPage(
                     
           # Main panel for displaying plotly map
           mainPanel(
-            plotlyOutput("scatter")     
+            plotlyOutput("scatter"), 
+            h2("Summary"),
+            textOutput("text")
           )
         )
                   

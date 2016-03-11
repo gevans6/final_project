@@ -3,6 +3,7 @@ library(plotly)
 library(dplyr)
 
 source('graph_SingleByAge .R')
+source('SummaryFunctions.R')
 
 allRaces <- read.csv("498_data/Tab01-AllRaces.csv")
 asian <- read.csv("498_data/Tab01-AsianAlone.csv")
@@ -91,4 +92,49 @@ shinyServer(function(input, output) {
         
     graph_SingleByAge(customDF, yaxis)  
   })
+  
+  output$text <- renderText({
+    data_set <- data.frame(1)
+    if(input$dfSelection == 1) {
+      data_set <- SummaryInfo(allRaces)
+    }
+    if(input$dfSelection == 2) {
+      data_set <- SummaryInfo(asian)
+    }
+    if(input$dfSelection == 3) {
+      data_set <- SummaryInfo(asianCombo)
+    }
+    if(input$dfSelection == 4) {
+      data_set <- SummaryInfo(black)
+    }
+    if(input$dfSelection == 5) {
+      data_set <- SummaryInfo(blackCombo)
+    }
+    if(input$dfSelection == 6) {
+      data_set <- SummaryInfo(cFB)
+    }
+    if(input$dfSelection == 7) {
+      data_set <- SummaryInfo(foreign)
+    }
+    if(input$dfSelection == 8) {
+      data_set <- SummaryInfo(hispanic)
+    }
+    if(input$dfSelection == 9) {
+      data_set <- SummaryInfo(white)
+    }
+    if(input$dfSelection == 10) {
+      data_set <- SummaryInfo(whiteNonH)
+    }
+    if(input$dfSelection == 11) {
+      data_set <- SummaryInfo(whiteCombo)
+    }
+    if(input$dfSelection == 12) {
+      data_set <- SummaryInfo(whiteComboNonH)
+    }
+    paste0("The total population size is ", summary$Population, ". ", summary$male_percent, "% of males
+    are enrolled and ", summary$female_percent, "% of females are enrolled. ", summary$PercentNurseKinder, "%
+    are enrolled as nursury/kindergarden, ", summary$PercentElementary, "% in Elementary, ",
+    summary$PercentHS, "% in high school, and ", summary$PercentCollege, "% in college.")
+  })
+  
 })
