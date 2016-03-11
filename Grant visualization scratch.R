@@ -13,6 +13,15 @@ PTEset <- BlackAlone %>% group_by(Gender) %>% select(Ages, PercentTotalEnrolled)
 plot_ly(PTEset, x = Ages, y = PercentTotalEnrolled, mode = 'markers', color = Gender)
 
 
+WhiteOrInComboNonHis <- read.csv("data/Tab01-WhiteAloneOrInCombinationNonHispanic.csv")
+WhiteOrInCombo <- read.csv("data/Tab01-WhiteAloneOrInCombination.csv")
+WhiteNonHispanic <- read.csv("data/Tab01-WhiteAloneNonHispanic.csv")
+Hispanic <- read.csv("data/Tab01-Hispanic.csv")
+ForeignBorn <- read.csv("data/Tab01-ForeignBorn.csv")
+ChildForeign <- read.csv("data/Tab01-ChildrenOfForeignBorn.csv")
+BlackAloneOrInCombo <- read.csv("data/Tab01-BlackAloneOrInCombination.csv")
+AsianAloneOrInCombo <- read.csv("data/Tab01-AsianAloneOrInCombination.csv")
+
 #percent not enrolled
 PTNEsetB <- BlackAlone %>% group_by(Gender) %>% select(Ages, PercentTotalNotEnrolled) 
 PTNEsetW <- WhiteAlone %>% group_by(Gender) %>% select(Ages, PercentTotalNotEnrolled)
