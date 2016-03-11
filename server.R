@@ -131,10 +131,10 @@ shinyServer(function(input, output) {
     if(input$dfSelection == 12) {
       data_set <- SummaryInfo(whiteComboNonH)
     }
-    paste0("The total population size is ", summary$Population, ". ", summary$male_percent, "% of males
-    are enrolled and ", summary$female_percent, "% of females are enrolled. ", summary$PercentNurseKinder, "%
-    are enrolled as nursury/kindergarden, ", summary$PercentElementary, "% in Elementary, ",
-    summary$PercentHS, "% in high school, and ", summary$PercentCollege, "% in college.")
+    paste0("The total population size is ", data_set$Population, ". ", data_set$male_percent, "% of males
+    are enrolled and ", data_set$female_percent, "% of females are enrolled. ", data_set$PercentNurseKinder, "%
+    are enrolled as nursury/kindergarden, ", data_set$PercentElementary, "% in Elementary, ",
+    data_set$PercentHS, "% in high school, and ", data_set$PercentCollege, "% in college.")
   })
   
 })
