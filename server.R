@@ -50,7 +50,7 @@ shinyServer(function(input, output) {
               }
               if(input$dfSelection[i] == 9) {
                 customDF <- combine_sets(customDF, white)
-              }
+              } 
               if(input$dfSelection[i] == 10) {
                 customDF <- combine_sets(customDF, whiteNonH)
               }

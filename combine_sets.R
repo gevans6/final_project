@@ -3,4 +3,3 @@ combine_sets <- function(...){
   return(newdf)
 }
 
-#combine_sets(WhiteAlone, BlackAlone, AsianAlone)
